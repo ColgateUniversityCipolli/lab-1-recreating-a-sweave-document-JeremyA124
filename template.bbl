@@ -1,0 +1,18 @@
+\begin{thebibliography}{}
+
+\bibitem[Dahl et~al., 2019]{xtable}
+Dahl, D.~B., Scott, D., Roosen, C., Magnusson, A., and Swinton, J. (2019).
+\newblock {\em xtable: Export Tables to LaTeX or HTML}.
+\newblock R package version 1.8-4.
+
+\bibitem[Horst et~al., 2020]{palmerP}
+Horst, A.~M., Hill, A.~P., and Gorman, K.~B. (2020).
+\newblock {\em palmerpenguins: Palmer Archipelago (Antarctica) penguin data}.
+\newblock R package version 0.1.0.
+
+\bibitem[Molyneaux et~al., 1947]{Molyneaux1947}
+Molyneaux, L., Gilliam, S.~K., and Florant, L.~C. (1947).
+\newblock Differences in virginia death rates by color, sex, age, and rural or urban residence.
+\newblock {\em American Sociological Review}, 12:525--535.
+
+\end{thebibliography}

@@ -24,7 +24,7 @@
 \begin{document}
 
 \vspace{-1in}
-\title{Lab XX -- MATH 240 -- Computational Statistics}
+\title{Lab 1 -- MATH 240 -- Computational Statistics}
 
 \author{
   First Author \\
@@ -39,65 +39,236 @@
 
 \begin{multicols}{2}
 \begin{abstract}
-This document provides a basic template for the 2-page labs we will complete each week. Here, briefly summarize what you did and why it might be helpful. Provide all the top-line conclusions, but avoid providing \emph{all} the details. Results should be limited to ``we show X, Y, and Z."
+This document provides a basic template for the
+ 2-page labs we will complete each week. Here, you
+ should provide a succinct summary about what you
+ did and why it might be helpful.
 \end{abstract}
 
-\noindent \textbf{Keywords:} What topics does the lab cover concerning class? List 3-4 key terms here, separated by semicolons.
+\textbf{Keywords:} What topics does the lab cover with respect \\
+ to class?
 
 \section{Introduction}
-Provide an overarching summary of what you're talking about. In this section, you introduce the idea to the reader, and your goal is to pull them in. What's the mystery you aim to solve?
-
-You want to provide enough background to understand the context of the work. Specifically, what is the question you are addressing? If it applies, describe what information currently exists about this problem, including citations, and explain how the question you're answering complements this work.
-
-Provide a roadmap of the structure of the paper. 
-
-\subsection{Intro Subsection}
-You might need/want to discuss the topics in subsections. Or, you may have multiple questions.
-
-
-\section{Methods}
-Describe the data you are working with, if applicable. Describe the specific process you will follow to answer the question at hand. This does not mean you should write something like this.
-\begin{quote}
-\textit{I did this and then I did that and then I did this other thing and then..., and then..., and then...}
-\end{quote}
-Instead, it should provide a clear and concise narrative that flows from the problem specification in the Introduction to how you will approach answering it. This is where I would expect to see some citations for \texttt{R} packages you will use to conduct the statistical analysis reported in the Results section.
-
-
-\subsection{Methods Subsection}
-Much like the Introduction, subsections can be helpful for the Methods section. For example, you might describe data collection and the statistical analyses of the collected data in different subsections. Or, you may have different questions that require distinct methods. 
-
-\section{Results}
-Tie together the Introduction -- where you introduce the problem at hand -- and the methods --  what you propose to do to answer the question. Present your data, the results of your analyses, and how each reported aspect contributes to answering the question. This section should include table(s), statistic(s), and graphical displays. Make sure to put the results in a sensible order and that each result contributes a logical and developed solution. It should not just be a list. Avoid being repetitive. 
-
-\subsection{Results Subsection}
-Subsections can be helpful for the Results section, too. This can be particularly helpful if you have different questions to answer. 
+For this lab, you will
+\begin{enumerate}
+  \item Install \href{https://github.com/}{R} and \href{https://posit.co/download/rstudio-desktop/}{RStudio}.
+  \item Install tinytex (if necessary): \\
+  \texttt{install.packages("tinytex")}
+  \item Create a Github Account \href{https://github.com/}{here}, and email me your user-\\ 
+  name.
+  \item Install \href{https://desktop.github.com/}{Github Desktop}.
+  \item Accept the LAB1 assignment \href{https://classroom.github.com/a/gfC_xMMl}{here}.
+  \item Recreate this document (except put your name/info at 
+   the top) to get used to writing in \LaTeX~ and to see the 
+   types of things we can do when creating a document 
+   to convey statistical information. Make sure to commit 
+   and push your work using GitHub desktop as you finish 
+   each section.
+\end{enumerate}
+\textbf{Remark:} You will find the class Sweave cheat sheet to
+be \emph{incredibly} (\verb|\emph{incredibly}|) helpful.
 
 
-\section{Discussion}
- You should objectively evaluate the evidence you found in the data. Do not embellish or wish-terpet (my made-up phase for making an interpretation you, or the researcher, wants to be true without the data \emph{actually} supporting it). Connect your findings to the existing information you provided in the Introduction.
+\section{Word Processing Tasks}
 
-Finally, provide some concluding remarks that tie together the entire paper. Think of the last part of the results as abstract-like. Tell the reader what they just consumed -- what's the takeaway message?
+\subsection{Centering Text}
+\begin{center}
+We can center text in Sweave
+\end{center}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Bibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Bold, Italics, and Underlining}
+We can \textbf{bold}, \emph{italicize}, \underline{underline}, and \emph{emphasize} text
+in Sweave.
+
+Note: I did a colum break here so that the list wasn't 
+broken across columns.
+
+\columnbreak
+
+\subsection{Lists and Numbered Lists}
+We can write an unordered list in Sweave
+\begin{itemize}
+  \item first item
+  \item second item
+  \item thrid item
+\end{itemize}
+We can write a numbred list in Sweave
+\begin{enumerate}
+  \item first item
+  \item second item
+  \item third item
+\end{enumerate}
+We can write a lettered list in Sweave
+\begin{enumerate}[a.]\itemsep0em
+  \item first item
+  \item second item
+  \item third item
+\end{enumerate}
+
+
+
+
+\subsection{Submissions}
+ This part of the midterm is due Sunday November 14 by 5p.
+ I will not accept late submissions. Note that you may use
+ this template to help build your introduction and methods
+ sections,and you can use the work you did as a group during
+ the datathon. Still, I expect this submission to be your own
+ summary and extension of that work without collaboration.
+
+
+\subsection{Typing Mathmatical Expressions}
+We can write a one line equation  that is centered like this
+\[\widehat{y_i} = \beta_0 + \beta_1 x_{1i}+ \beta_2 x_{2i} + \beta_3 x_{1i} x_{2i} + \epsilon_i.\]
+This can be written in text as $\widehat{y_i} = \beta_0 + \beta_1 x_{1i}+ \beta_2 x_{2i} + \beta_3 x_{1i} x_{2i} + \epsilon_i.$ using as well.
+
+When we need to show multiple steps, we can create a 
+multi-line equation that is centered like this:
+\begin{align*}
+ 8(x-5)+x&=9(x-5)+5\\
+ 8x-40+x&=9x-45+5 \tag{Distributing} \\
+ 9x-40&=9x-40 \tag{Combining Like Terms} \\
+ 9x&=9x \tag{Adding 40 to both sides} \\
+ x&=x \tag{Dividing both sides by 9}
+\end{align*}
+The equality holds for any x.
+
+Note, I did a page break here so that the next sections started on a clean page
+
+\pagebreak
+
+\subsection{Runnning R Code}
+Code chunks can be entered into Sweave; e.g., here are some comments
+<<size = 'scriptsize'>>=
+# R code goes here
+# Output is automatically printed in the pdf
+@
+
+Below, you can see that we can do algebra with R.
+
+<<size='scriptsize'>>=
+8*(9-5)+9 #8(x-5)+ xforx=9
+@
+
+Below, we show we produced the code without evalu-
+ating it
+
+<<eval = FALSE, size='scriptsize'>>=
+8*(9-5)+9 #8(x-5)+ xforx=9
+@
+
+Alternativley, we can produced the output without the 
+code.
+
+<<echo = FALSE, size='scriptsize'>>=
+8*(9-5)+9 #8(x-5)+ xforx=9
+@
+
+We can also call object values from \texttt{R} directly.
+
+<<size='scriptsize'>>=
+result <- 8*(9-5)+ 9 #8(x-5)+xforx=9
+result.with.error <- result + rnorm(1, mean = 0, sd = 0.1)
+result.with.error
+@
+
+The Result is \Sexpr{round(result.with.error, 5)}. Note that I did not type the
+result but I used the \verb|\Sexpr{}| command.
+
+\subsection{Plotting}
+We can also plot with R.
+<<plot1, eval=FALSE, fig.height=4, size='scriptsize'>>=
+#Plota histogramofrandomexponentialdata
+hist(rexp(100))
+@
+
+\begin{figure}[H]
+\begin{center}
+<<echo=FALSE, warning=FALSE, message=FALSE, fig.dim=c(5,3,5), fig.height=4>>=
+<<plot1>>
+@
+
+\caption{A histogram of random exponentially distributed data, $n=100.$}
+\label{plot1}
+\end{center}
+\end{figure}
+
+
+
+\subsection{Tables}
+Below, we load and take a peek at some data about the death
+rates per 1000 in Virginia in 1940 \citep{Molyneaux1947}.
+
+<<size='scriptsize'>>=
+ data(VADeaths)
+ head(VADeaths) #Takeapeekofthedata
+@
+If we want to print this nicely, we can do so using the
+xtable package \citep{xtable}, which we can reference \\
+using the label (Table \hyperref[plot1]{1}).
+<<size='scriptsize'>>=
+ library(xtable)
+ sleep.table <- xtable(VADeaths,
+                     label="VADeaths.tab",
+                     caption="Death Rates per 1000 in Virginia (1940).")
+@
+
+<<echo = FALSE, results="asis">>=
+# placement="H" places table [H]ere, just like plot
+# include.rownames=FALSE doesn’t print the row numbers in this example
+print(sleep.table,
+table.placement = "H", include.rownames=FALSE, size = "small")
+@
+
 \vspace{2em}
-
-\noindent\textbf{Bibliography:} Note that when you add citations to your bib.bib file \emph{and}
-you cite them in your document, the bibliography section will automatically populate here.
-
 \begin{tiny}
 \bibliography{bib}
 \end{tiny}
 \end{multicols}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Appendix
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\onecolumn
-\section{Appendix}
+\pagebreak{}
 
-If you have anything extra, you can add it here in the appendix. This can include images or tables that don't work well in the two-page setup, code snippets you might want to share, etc.
+\section{Appendix}
+Below is a table from a paper I'm currently working on. Without the analysis object \texttt{R}, I have to create this table myself.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{ l  cc  cc  cc  cc |}\\\hline
+Term & SS (Type III) & df & F & p-value & $\epsilon_i {2}$ \\\hline
+(Intercept) &4.95 &1.00 &5.37 &0.0209 \\
+White-Poor (Z) &3.17 &1.00 &3.44 &0.0642 &0.02 \\
+Zero-Sum (Z) &17.96 &1.00 &19.48 &< 0.0001 &0.03 \\
+Education (Z) &0.39 &1.00 &0.42 &0.5161 &0.00 \\
+Income (Z) &0.16 &1.00 &0.17 &0.6817 &0.00 \\
+Democrat &9.60 &1.00 &10.42 &0.0013 &0.02 \\
+Black-Poor (Z) &1.92 &1.00 &2.08 &0.1496 &0.00 \\
+White-Poor (Z)×Zero-Sum (Z) &7.96 &1.00 &8.63 &0.0034 &0.01 \\
+Residuals &506.92 &550.00 \\\hline
+\end{tabular} \label{full.sleep.tab}
+\caption{ANOVA table for Case Study I.}
+\end{center}
+\end{table}
+
+The \texttt{plamerpenguins} package for \texttt{R} \citep{palmerP} provides data on adult foraging penguins near Palmer Station, Antarctica. Figure \hyperref[plot2]{2} is too big to fit nicely in our column-based-template above, so I've placed it here in the abstract by saving it and presenting it scaled to 0.75.
+
+<<plot5, eval = FALSE, size='scriptsize'>>=
+library(palmerpenguins)
+pdf("figure/penguins.pdf", width = 8, height = 5)
+plot(penguins)
+dev.off()
+@
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.75]{figure/penguins.pdf}
+\caption{Data on adult foraging penguins near Palmer Station, Antarctica}
+\label{plot2}
+\end{center}
+\end{figure}
+
+
+
+
 
 \end{document}
